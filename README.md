@@ -90,39 +90,8 @@ pip install -r requirements.txt
 python main_rebuild.py
 ```
 
-## 5 Experimental Result
 
-> In the Modality column, `M`, `P`, and `C` denote MRI, PET, and clinical data.
-
-1、The comparative experimental results in ADNI1 datasets.
-
-| Method       | Modality | ACC          | PRE          | BACC         | AUC          | F1           |
-| ------------ | -------- | ------------ | ------------ | ------------ | ------------ | ------------ |
-| HOPE         | M        | 0.611        | 0.599        | 0.699        | 0.648        | 0.593        |
-| Resnet       | M,P      | 0.725        | 0.671        | 0.693        | 0.653        | 0.606        |
-| JSRL         | M,P      | 0.582        | 0.580        | 0.566        | 0.571        | 0.580        |
-| VAPL         | M,C      | 0.630        | 0.621        | 0.628        | 0.635        | 0.651        |
-| Diamond      | M,P      | 0.736        | 0.719        | 0.693        | 0.638        | 0.591        |
-| HFBSurv      | M,P,C    | 0.740        | 0.701        | 0.714        | 0.711        | 0.630        |
-| IMF          | M,P,C    | <u>0.756</u> | 0.740        | 0.710        | 0.720        | 0.605        |
-| IHF(w/o CMG) | M,P,C    | **0.781**    | **0.805**    | **0.741**    | **0.747**    | <u>0.658</u> |
-| IHF(Ours)    | M,P,C    | 0.737        | <u>0.708</u> | <u>0.723</u> | <u>0.738</u> | **0.666**    |
-
-2、The comparative experimental results in ADNI2 datasets.
-
-| Method       | Modality | ACC          | PRE          | BACC         | AUC          | F1           |
-| ------------ | -------- | ------------ | ------------ | ------------ | ------------ | ------------ |
-| HOPE         | M        | 0.701        | 0.706        | 0.645        | 0.624        | 0.505        |
-| Resnet       | M,P      | 0.809        | 0.721        | 0.683        | 0.709        | 0.510        |
-| JSRL         | M,P      | 0.650        | 0.600        | 0.655        | 0.694        | 0.519        |
-| VAPL         | M,C      | 0.712        | <u>0.750</u> | 0.672        | 0.623        | 0.561        |
-| Diamond      | M,P      | 0.818        | 0.739        | 0.682        | 0.645        | 0.509        |
-| HFBSurv      | M,P,C    | 0.813        | 0.701        | 0.688        | 0.672        | 0.539        |
-| IMF          | M,P,C    | 0.838        | 0.737        | 0.713        | 0.757        | 0.564        |
-| IHF(w/o CMG) | M,P,C    | <u>0.840</u> | 0.722        | <u>0.723</u> | **0.839**    | **0.591**    |
-| IHF(Ours)    | M,P,C    | **0.856**    | **0.777**    | **0.735**    | <u>0.812</u> | <u>0.584</u> |
-
-## 6 Example Data for Inference
+## 5 Example Data for Inference
 
 We provide sample MRI and PET images in `example_data/` for quick inference testing:
 
@@ -141,7 +110,7 @@ python inference.py
 
 Due to the sensitive information contained in clinical data, it is not provided here, only as an example in the code
 
-## 7 Pretrained Model
+## 6 Pretrained Model
 
 A pretrained model is available for inference. 
 
