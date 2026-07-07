@@ -1,4 +1,4 @@
-# IHFNet: Incomplete Multimodal Hierarchical Feature Fusion Network for Mild Cognitive Impairment Conversion Prediction
+# IMHF²Net: Incomplete Multimodal Hierarchical Feature Fusion Network for MCI Conversion Prediction
 
 
 
